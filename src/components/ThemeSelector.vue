@@ -33,8 +33,10 @@ export default {
   @import '../styles/variables.scss';
 
   section {
-    width: 434px;
+    width: 100vw;
     height: 199px;
+    overflow: hidden;
+
     .wave-coconut {
         background: url('../assets/waves-sprite.png') no-repeat -10px -294px;
       }
