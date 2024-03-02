@@ -1,1 +1,40 @@
 $white: #f7fBf6;
+
+@mixin isTheme($theme) {
+  @if $theme == 'coconut' {
+    $primary: #0484c7;
+    $secondary: #efe5b0;
+    $tertiary: #e05c18;
+    $quaternary: #fbdacf;
+
+  } @else if $theme == 'peach' {
+    $primary: #f07e19;
+    $secondary: #ffee7f;
+    $tertiary: #f39873;
+    $quaternary: #fbdacf;
+  } @else if $theme == 'lemon' {
+    $primary: #249c38;
+    $secondary: #fee84c;
+    $tertiary: #8ebd22;
+    $quaternary: #f6e81d;
+
+    background-color: $secondary;
+  } @else if $theme == 'cherry' {
+    $primary: #c71617;
+    $secondary: #fbdacf;
+    $tertiary: #ed6ca5;
+    $quaternary: $tertiary;
+  } @else if $theme == 'watermelon' {
+    $primary: #9ace30;
+    $secondary: #f01788;
+    $tertiary: #f03094;
+    $quaternary: #e9f5b9;
+    
+    background-color: $tertiary;
+  } @else {
+    @include isTheme('coconut');
+  }
+}
+
+
+
