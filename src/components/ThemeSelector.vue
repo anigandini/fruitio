@@ -1,9 +1,11 @@
 <template>
-  <ul>
-    <li v-for="theme, index in themes" :key="index">
-      <button @click="changeTheme(theme)" :class="themeColor === theme ? 'selected' : ''"><span :class="theme + '-icon'"></span></button>
-    </li>
-  </ul>
+  <section >
+    <ul  :class="'wave-' + themeColor">
+      <li v-for="theme, index in themes" :key="index">
+        <button @click="changeTheme(theme)" :class="themeColor === theme ? 'selected' : ''"><span :class="theme + '-icon'"></span></button>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script lang="ts">
@@ -30,11 +32,48 @@ export default {
 <style lang="scss">
   @import '../styles/variables.scss';
 
-  ul {
+  section {
+    width: 434px;
+    height: 199px;
+    .wave-coconut {
+        background: url('../assets/waves-sprite.png') no-repeat -10px -294px;
+      }
+
+      .wave-peach {
+        background: url('../assets/waves-sprite.png') no-repeat -10px -46px;
+      }
+
+      .wave-lemon {
+        background: url('../assets/waves-sprite.png') no-repeat -504px -35px;
+      }
+
+      .wave-cherry {
+        background: url('../assets/waves-sprite.png') no-repeat -504px -280px;
+      }
+
+      .wave-watermelon {
+        background: url('../assets/waves-sprite.png') no-repeat -10px -520px;
+        position: relative;
+        bottom: 0;
+      }
+
+    ul {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: end;
     gap: 0.5rem;
+    width: 100%;
+    height: 200px;
     list-style-type: none;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    
+   
+
+      li {
+        padding-bottom: 2rem;
+      }
 
     button {
       border-radius: 50%;
@@ -84,5 +123,8 @@ export default {
           height: 34px;
       }
     }
+
+  }
+  
   }
 </style>
