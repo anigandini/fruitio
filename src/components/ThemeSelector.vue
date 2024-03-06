@@ -36,27 +36,35 @@ export default {
     width: 100vw;
     height: 199px;
     overflow: hidden;
+    position:absolute;
+    
+    ul {
+      background-image: url('../assets/waves-sprite-mb.png');
+    }
 
     .wave-coconut {
-        background: url('../assets/waves-sprite.png') no-repeat -10px -294px;
+      background-repeat: no-repeat;
+      background-position: -10px -294px;
       }
 
       .wave-peach {
-        background: url('../assets/waves-sprite.png') no-repeat -10px -46px;
+        background-repeat: no-repeat;
+        background-position: -10px -46px;
       }
 
       .wave-lemon {
-        background: url('../assets/waves-sprite.png') no-repeat -504px -35px;
+        background-repeat: no-repeat;
+        background-position: -504px -35px;
       }
 
       .wave-cherry {
-        background: url('../assets/waves-sprite.png') no-repeat -504px -280px;
+        background-repeat: no-repeat;
+        background-position:  -504px -280px;
       }
 
       .wave-watermelon {
-        background: url('../assets/waves-sprite.png') no-repeat -10px -520px;
-        position: relative;
-        bottom: 0;
+        background-repeat: no-repeat;
+        background-position: -10px -520px;
       }
 
     ul {
