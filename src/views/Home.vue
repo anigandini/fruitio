@@ -24,25 +24,31 @@ export default {
     height: 100%;
     display: flex;
 	  width: 100%;
+    background-image: url('../assets/patterns-sprite-mobile.png');
     
     &.cherry {
-      background: url('../assets/patterns-sprite.png') no-repeat -1470px -595px;
+      background-repeat: no-repeat;
+      background-position: -998px -263px;
     }
 
     &.coconut {
-      background: url('../assets/patterns-sprite.png') no-repeat -10px -633px;
+      background-repeat: no-repeat;
+      background-position: -1492px -163px;
     }
 
     &.lemon {
-      background: url('../assets/patterns-sprite.png') no-repeat 5px -1122px;
+      background-repeat: no-repeat;
+      background-position: -504px -139px;
     }
 
     &.peach {
-      background: url('../assets/patterns-sprite.png') no-repeat -187px 299px;
+      background-repeat: no-repeat;
+      background-position: -1986px -204px;
     }
 
     &.watermelon {
-      background: url('../assets/patterns-sprite.png') no-repeat -1534px 278px;
+      background-repeat: no-repeat;
+      background-position: -10px -159px;
     }
 
     .to-bottom {
