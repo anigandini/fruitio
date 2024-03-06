@@ -25,29 +25,25 @@ export default {
     display: flex;
 	  width: 100%;
     background-image: url('../assets/patterns-sprite-mobile.png');
+    background-repeat: no-repeat;
     
     &.cherry {
-      background-repeat: no-repeat;
       background-position: -998px -263px;
     }
 
     &.coconut {
-      background-repeat: no-repeat;
       background-position: -1492px -163px;
     }
 
     &.lemon {
-      background-repeat: no-repeat;
       background-position: -504px -139px;
     }
 
     &.peach {
-      background-repeat: no-repeat;
       background-position: -1986px -204px;
     }
 
     &.watermelon {
-      background-repeat: no-repeat;
       background-position: -10px -159px;
     }
 
