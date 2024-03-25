@@ -7,16 +7,50 @@ $white: #f7fBf6;
     $tertiary: #e05c18;
     $quaternary: #fbdacf;
 
+    h1 {
+      color: $tertiary;
+      font-size: 40pt;
+    }
+
+    .call-to-act {
+      background-color: $tertiary !important;
+      color: $white;
+      font-size: 14pt;
+    }
+
   } @else if $theme == 'peach' {
     $primary: #f07e19;
     $secondary: #ffee7f;
     $tertiary: #f39873;
     $quaternary: #fbdacf;
+
+    h1 {
+      color: $primary;
+      font-size: 40pt;
+    }
+
+    .call-to-act {
+      background-color: $primary !important;
+      color: $white;
+      font-size: 14pt;
+    }
+
   } @else if $theme == 'lemon' {
     $primary: #249c38;
     $secondary: #fee84c;
     $tertiary: #8ebd22;
     $quaternary: #f6e81d;
+
+    h1 {
+      color: $primary;
+      font-size: 40pt;
+    }
+
+    .call-to-act {
+      background-color: $primary !important;
+      color: $white;
+      font-size: 14pt;
+    }
 
     background-color: $secondary;
   } @else if $theme == 'cherry' {
@@ -24,6 +58,18 @@ $white: #f7fBf6;
     $secondary: #fbdacf;
     $tertiary: #ed6ca5;
     $quaternary: $tertiary;
+
+    h1 {
+      color: $primary;
+      font-size: 40pt;
+    }
+
+    .call-to-act {
+      background-color: $primary !important;
+      color: $white;
+      font-size: 14pt;
+    }
+
   } @else if $theme == 'watermelon' {
     $primary: #9ace30;
     $secondary: #f01788;
@@ -31,6 +77,18 @@ $white: #f7fBf6;
     $quaternary: #e9f5b9;
     
     background-color: $tertiary;
+
+    h1 {
+      color: $primary;
+      font-size: 40pt;
+    }
+
+    .call-to-act {
+      background-color: $primary !important;
+      color: $tertiary;
+      font-size: 14pt;
+    }
+
   } @else {
     @include isTheme('coconut');
   }
